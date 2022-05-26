@@ -6,7 +6,7 @@ Essa automação testa de forma funcional as 8 principais funcionalidades do fac
  - [x] Função automatizada 
  - [ ] Função não automatizada
  ---
-De acordo com Digital Information World ás 8 funcionalidades mais usadas pelos usuários são:
+De acordo com [Digital Information World](https://www.digitalinformationworld.com/2015/02/fascinating-social-networking-stats-2015.html?m=1) ás 8 funcionalidades mais usadas pelos usuários são:
 - [x] - 73% aprox. Clicou no botão de like.
 - [x] - 56% aprox. Comentou em foto ou vídeo de um amigo.
 - [x] - 56% aprox. Mandou mensagem para um amigo de 1 para 1.
