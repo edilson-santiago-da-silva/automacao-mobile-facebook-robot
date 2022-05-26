@@ -27,7 +27,7 @@ De acordo com [Digital Information World](https://www.digitalinformationworld.co
   - [Node.js/ Appium](https://nodejs.org/en/)
   - [Visual Studio](https://code.visualstudio.com/) - Pode ser o editor de sua preferência.
 
-## Instalação & Execução
+## Instalação & Execução Windows
 - Instale o Python
 - Instale o robot, execute no prompt:
 ``` 
