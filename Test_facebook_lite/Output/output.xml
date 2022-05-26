@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220517 15:12:26.953" rpa="false" schemaversion="3">
+<suite id="s1" name="Facebook Lite Test" source="C:\Users\edils\AndroidStudioProjectsEdilson\Test_facebook_lite\Test_facebook_lite\Tests\facebook_lite_test.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Abrir aplicativo" line="7">
+<kw name="Abrir o aplicativo" library="facebook_lite_resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=0044226523</arg>
+<arg>appPackage=com.facebook.katana</arg>
+<arg>appActivity=com.facebook.katana.platform.FacebookAuthenticationActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220517 15:12:27.477" endtime="20220517 15:12:54.008"/>
+</kw>
+<status status="PASS" starttime="20220517 15:12:27.477" endtime="20220517 15:12:54.008"/>
+</kw>
+<doc>Esse teste abre o aplicativo</doc>
+<tag>Abrir_app</tag>
+<status status="PASS" starttime="20220517 15:12:27.474" endtime="20220517 15:12:54.012"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Login do usuario" line="12">
+<kw name="Sleep" library="BuiltIn">
+<arg>12s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:06.032" level="INFO">Slept 12 seconds</msg>
+<status status="PASS" starttime="20220517 15:12:54.021" endtime="20220517 15:13:06.033"/>
+</kw>
+<kw name="Dado que estou na tela inicial do app" library="facebook_lite_resources">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_outra_conta}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:06.041" endtime="20220517 15:13:06.925"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_outra_conta}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:06.937" level="INFO">Clicking element '//android.widget.Button[@text="Entrar em outra conta"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:06.926" endtime="20220517 15:13:07.105"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:06.039" endtime="20220517 15:13:07.106"/>
+</kw>
+<kw name="Quando logar usuario e senha" library="facebook_lite_resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:13.119" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20220517 15:13:07.110" endtime="20220517 15:13:13.120"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${btn_n_auternativas}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_n_auternativas}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220517 15:13:20.508" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220517 15:13:19.585" endtime="20220517 15:13:20.509"/>
+</kw>
+<msg timestamp="20220517 15:13:20.510" level="FAIL">Element locator 'id=com.google.android.gms:id/cancel' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20220517 15:13:13.121" endtime="20220517 15:13:20.511"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:13.120" endtime="20220517 15:13:20.511"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${btn_n_auternativas}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_n_auternativas}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:20.516" level="INFO">Clicking element 'id=com.google.android.gms:id/cancel'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220517 15:13:21.521" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220517 15:13:20.573" endtime="20220517 15:13:21.522"/>
+</kw>
+<msg timestamp="20220517 15:13:21.523" level="FAIL">ValueError: Element locator 'id=com.google.android.gms:id/cancel' did not match any elements.</msg>
+<status status="FAIL" starttime="20220517 15:13:20.512" endtime="20220517 15:13:21.551"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:20.512" endtime="20220517 15:13:21.552"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@index="3"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:21.552" endtime="20220517 15:13:21.707"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@index="3"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:21.713" level="INFO">Clicking element '//android.widget.EditText[@index="3"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:21.708" endtime="20220517 15:13:21.942"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Telefone ou email"]</arg>
+<arg>text=${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:21.962" level="INFO">Typing text 'edilsonsantiago66@gmail.com' into text field '//android.widget.EditText[@text="Telefone ou email"]'</msg>
+<status status="PASS" starttime="20220517 15:13:21.943" endtime="20220517 15:13:24.462"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Senha"]</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:24.482" level="INFO">Typing text '34274536e7' into text field '//android.widget.EditText[@text="Senha"]'</msg>
+<status status="PASS" starttime="20220517 15:13:24.463" endtime="20220517 15:13:25.843"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@index="3"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:25.844" endtime="20220517 15:13:26.658"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@index="3"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:26.667" level="INFO">Clicking element '//android.view.ViewGroup[@index="3"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:26.659" endtime="20220517 15:13:27.531"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:07.109" endtime="20220517 15:13:27.533"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:32.563" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 15:13:27.550" endtime="20220517 15:13:32.564"/>
+</kw>
+<kw name="Então mostre &quot;Continuar ou Ok&quot;" library="facebook_lite_resources">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.widget.Button[@text="OK"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:32.572" endtime="20220517 15:13:32.711"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.widget.Button[@text="OK"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:32.716" level="INFO">Clicking element '//android.widget.Button[@text="OK"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:32.712" endtime="20220517 15:13:32.865"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:37.879" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 15:13:32.866" endtime="20220517 15:13:37.879"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@content-desc="Recusar"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:37.880" endtime="20220517 15:13:38.263"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@content-desc="Recusar"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:38.278" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Recusar"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:38.264" endtime="20220517 15:13:38.420"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:32.569" endtime="20220517 15:13:38.421"/>
+</kw>
+<doc>Esse teste faz o login do usuario</doc>
+<tag>Login</tag>
+<status status="PASS" starttime="20220517 15:12:54.019" endtime="20220517 15:13:38.429"/>
+</test>
+<test id="s1-t3" name="Caso de teste 03 - Envio de uma mensagem" line="21">
+<kw name="Dado que estou na home page" library="facebook_lite_resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:43.452" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 15:13:38.449" endtime="20220517 15:13:43.453"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@content-desc="Ir para o perfil"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:43.454" endtime="20220517 15:13:43.736"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:38.446" endtime="20220517 15:13:43.737"/>
+</kw>
+<kw name="Quando clico no messenger" library="facebook_lite_resources">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.view.View[@index="0"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:43.743" endtime="20220517 15:13:44.013"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.view.View[@index="0"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:44.028" level="INFO">Clicking element '//android.view.View[@index="0"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:44.015" endtime="20220517 15:13:44.520"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:43.740" endtime="20220517 15:13:44.521"/>
+</kw>
+<kw name="Então seleciono o Contato" library="facebook_lite_resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 15:13:49.549" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 15:13:44.532" endtime="20220517 15:13:49.551"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@index="3" and @bounds="[0,742][1080,958]"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:49.551" endtime="20220517 15:13:51.758"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.view.ViewGroup[@index="3" and @bounds="[0,742][1080,958]"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:51.771" level="INFO">Clicking element '//android.view.ViewGroup[@index="3" and @bounds="[0,742][1080,958]"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:51.759" endtime="20220517 15:13:52.040"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:44.530" endtime="20220517 15:13:52.041"/>
+</kw>
+<kw name="E digito a mensagem e envio." library="facebook_lite_resources">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Aa"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:52.054" endtime="20220517 15:13:55.540"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Aa"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:55.543" level="INFO">Clicking element '//android.widget.EditText[@text="Aa"]'.</msg>
+<status status="PASS" starttime="20220517 15:13:55.541" endtime="20220517 15:13:57.761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Digite uma mensagem..."]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:57.761" endtime="20220517 15:13:57.942"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>locator=//android.widget.EditText[@text="Digite uma mensagem..."]</arg>
+<arg>text=Mensagem enviada automaticamente pelo Robot, Teste de envio de mensagem OK.🤖🧐✔</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220517 15:13:57.952" level="INFO">Typing text 'Mensagem enviada automaticamente pelo Robot, Teste de envio de mensagem OK.🤖🧐✔' into text field '//android.widget.EditText[@text="Digite uma mensagem..."]'</msg>
+<status status="PASS" starttime="20220517 15:13:57.943" endtime="20220517 15:13:59.043"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>locator=//android.widget.ImageView[@content-desc="Enviar"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220517 15:13:59.044" endtime="20220517 15:14:00.097"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>locator=//android.widget.ImageView[@content-desc="Enviar"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220517 15:14:00.106" level="INFO">Clicking element '//android.widget.ImageView[@content-desc="Enviar"]'.</msg>
+<status status="PASS" starttime="20220517 15:14:00.098" endtime="20220517 15:14:00.299"/>
+</kw>
+<status status="PASS" starttime="20220517 15:13:52.051" endtime="20220517 15:14:00.300"/>
+</kw>
+<tag>msg</tag>
+<status status="PASS" starttime="20220517 15:13:38.436" endtime="20220517 15:14:00.309"/>
+</test>
+<doc>Essa suíte testa o app do facebook lite com usuario ficticio</doc>
+<status status="PASS" starttime="20220517 15:12:26.957" endtime="20220517 15:14:00.326"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Abrir_app</stat>
+<stat pass="1" fail="0" skip="0">Login</stat>
+<stat pass="1" fail="0" skip="0">msg</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Facebook Lite Test">Facebook Lite Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
