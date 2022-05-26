@@ -24,8 +24,7 @@ De acordo com Digital Information World ás 8 funcionalidades mais usadas pelos 
  -  [Python](https://www.python.org/)
  -  [JDK +8](https://www.oracle.com/java/technologies/javase-downloads.html)
  -  [Android Studio](https://developer.android.com/studio)
-  -  [Appium](https://appium.io/)
-  - [Node.js](https://nodejs.org/en/)
+  - [Node.js/ Appium](https://nodejs.org/en/)
   - [Visual Studio](https://code.visualstudio.com/) - Pode ser o editor de sua preferência.
 
 ## Instalação & Execução
